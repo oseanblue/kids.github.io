@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>English and Hindi letter</title>
+    <!-- Bootstrap CSS link -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        /* Custom CSS for slate/blackboard style */
+        body {
+            background-color: #444;
+            font-family: 'Chalkboard', 'Comic Sans MS', cursive;
+            color: #fff;
+        }
+
+        .slate {
+            background-color: #222;
+            border: 5px solid #444;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+            padding: 20px;
+        }
+
+        /* Colors for letters */
+        .english-letter {
+            color: whitesmoke; /* Blue */
+        }
+
+        .hindi-letter {
+            color: white; /* Red */
+        }
+
+        /* Hide the English letters section by default */
+        .english-letters-section {
+            display: none;
+        }
+
+        /* Add blackboard style for letters */
+        .letter-content {
+            font-size: 36px;
+            background-color: #333;
+            padding: 10px;
+            border: 2px solid #444;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+            margin-bottom: 10px;
+            display: inline-block;
+        }
+
+        /* Add space for small images */
+        .letter-image {
+            width: 20px;
+            height: 20px;
+            margin-right: 10px;
+            display: inline-block;
+            vertical-align: middle;
+        }
+        .slate {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+        .chalk-btn {
+        background-color: #444;
+        border: 2px solid #fff;
+        color: #fff;
+        font-size: 18px;
+        padding: 10px 20px;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        font-family: 'Chalkboard', 'Comic Sans MS', cursive; /* Use the chalkboard font for the buttons */
+    }
+
+    .chalk-btn:hover {
+        background-color: #777;
+    }
+
+    .chalk-btn:focus {
+        outline: none;
+    }
+
+        /* Add animation */
+        .fade-in {
+            animation: fadeIn 0.5s ease-in-out;
+        }
+
+        @keyframes fadeIn {
+            0% { opacity: 0; transform: translateY(-10px); }
+            100% { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+</head>
+<body>
+    <div class="container mt-5 slate">
+        <h1 class="text-center mb-4">Learn Hindi and English letters</h1>
+        <button id="hindi-btn" class="chalk-btn mb-2">Hindi Letters</button>
+    <button id="english-btn" class="chalk-btn mb-2">English Letters</button>
+    
+        <div class="row hindi-letters-section">
+            <!-- Hindi Letters -->
+            <div class="col-md-6">
+                <h2 class="mb-3">Hindi Letters</h2>
+                <div class="letter-content hindi-letter fade-in">
+                    अ (a)
+                </div>
+                <div class="letter-content hindi-letter fade-in">
+                    आ (aa) 
+                </div>
+                <div class="letter-content hindi-letter fade-in">
+                    ए (e) 
+                </div>
+                <div class="letter-content hindi-letter fade-in">
+                    ई (ii)
+                </div>
+                <div class="letter-content hindi-letter fade-in">
+                    ऍ (ei)
+                </div>
+                <div class="letter-content hindi-letter fade-in">
+                    ऎ (ei) 
+                </div>
+                <div class="letter-content hindi-letter fade-in">
+                    ऐ (ai) 
+                </div>
+                <div class="letter-content hindi-letter fade-in">
+                    इ (i) 
+                </div>
+                <div class="letter-content hindi-letter fade-in">
+                    ओ (o) 
+                </div>
+                <div class="letter-content hindi-letter fade-in">
+                    ऑ (oi)
+                </div>
+                <div class="letter-content hindi-letter fade-in">
+                    ऒ (oii) 
+                </div>
+                <div class="letter-content hindi-letter fade-in">
+                    ऊ (uu) 
+                </div>
+                <div class="letter-content hindi-letter fade-in">
+                    औ (ou)
+                </div>
+                <div class="letter-content hindi-letter fade-in">
+                    उ (u) 
+                </div>
+                <div class="letter-content hindi-letter fade-in">
+                    ब (B) 
+                </div>
+                <div class="letter-content hindi-letter fade-in">
+                    भ (Bha) 
+                </div>
+                <div class="letter-content hindi-letter fade-in">
+                    च (Ca) 
+                </div>
+                <div class="letter-content hindi-letter fade-in">
+                    छ (Chha) 
+                </div>
+                <div class="letter-content hindi-letter fade-in">
+                    ड (Da) 
+                </div>
+                <div class="letter-content hindi-letter fade-in">
+                    ढ (Dha) 
+                </div>
+                <div class="letter-content hindi-letter fade-in">
+                    फ (Fa) 
+                </div>
+                <div class="letter-content hindi-letter fade-in">
+                    फ़ (Fi) 
+                </div>
+                <div class="letter-content hindi-letter fade-in">
+                    ग (Ga) 
+                </div>
+                <div class="letter-content hindi-letter fade-in">
+                    घ (Gha) 
+                </div>
+                <div class="letter-content hindi-letter fade-in">
+                    ग़ (Ghi) 
+                </div>
+                <div class="letter-content hindi-letter fade-in">
+                    ह (Ha) 
+                </div>
+                <div class="letter-content hindi-letter fade-in">
+                    ज (Ja) 
+                </div>
+                <div class="letter-content hindi-letter fade-in">
+                    झ (Jha) 
+                </div>
+                <div class="letter-content hindi-letter fade-in">
+                    क (Ka) 
+                </div>
+                <div class="letter-content hindi-letter fade-in">
+                    ख (Kha)
+                </div>
+                <div class="letter-content hindi-letter fade-in">
+                    ख़ (Khi) 
+                </div>
+                <div class="letter-content hindi-letter fade-in">
+                    ल (L) 
+                </div>
+                <div class="letter-content hindi-letter fade-in">
+                    ळ (Li)
+                </div>
+                <div class="letter-content hindi-letter fade-in">
+                    ऌ (Li)
+                </div>
+                <div class="letter-content hindi-letter fade-in">
+                    ऴ (Lii) 
+                </div>
+                <div class="letter-content hindi-letter fade-in">
+                    ॡ (Lii) 
+                </div>
+                <div class="letter-content hindi-letter fade-in">
+                    म (Ma) 
+                </div>
+                <div class="letter-content hindi-letter fade-in">
+                    न (Na)
+                </div>
+                <div class="letter-content hindi-letter fade-in">
+                    ङ (N'a) 
+                </div>
+                <div class="letter-content hindi-letter fade-in">
+                    ञ (Nia) 
+                </div>
+                <div class="letter-content hindi-letter fade-in">
+                    ण (Nae) 
+                </div>
+                <div class="letter-content hindi-letter fade-in">
+                    ऩ (Ni) 
+                </div>
+                <div class="letter-content hindi-letter fade-in">
+                    ॐ (oms) 
+                </div>
+                <div class="letter-content hindi-letter fade-in">
+                    प (Pa) 
+                </div>
+                <div class="letter-content hindi-letter fade-in">
+                    क़ (Qi) 
+                </div>
+                <div class="letter-content hindi-letter fade-in">
+                    र (Ra) 
+                </div>
+                <div class="letter-content hindi-letter fade-in">
+                    ऋ (Ri) 
+                </div>
+                <div class="letter-content hindi-letter fade-in">
+                    ॠ (Ri) 
+                </div>
+                <div class="letter-content hindi-letter fade-in">
+                    ऱ (Ri) 
+                </div>
+                <div class="letter-content hindi-letter fade-in">
+                    स (Sa) 
+                </div>
+                <div class="letter-content hindi-letter fade-in">
+                    श (Sha) 
+                </div>
+                <div class="letter-content hindi-letter fade-in">
+                    ष (Shha) 
+                </div>
+                <div class="letter-content hindi-letter fade-in">
+                    ट (Ta) 
+                </div>
+                <div class="letter-content hindi-letter fade-in">
+                    त (T'a) 
+                </div>
+                <div class="letter-content hindi-letter fade-in">
+                    ठ (Tha) 
+                </div>
+                <div class="letter-content hindi-letter fade-in">
+                    द (Tha) 
+                </div>
+                <div class="letter-content hindi-letter fade-in">
+                    थ (T'ha)
+                </div>
+                <div class="letter-content hindi-letter fade-in">
+                    ध (Thha) 
+                </div>
+                <div class="letter-content hindi-letter fade-in">
+                    ड़ (ugDha) 
+                </div>
+                <div class="letter-content hindi-letter fade-in">
+                    ढ़ (ugDhha) 
+                </div>
+                <div class="letter-content hindi-letter fade-in">
+                    व (Va) 
+                </div>
+                <div class="letter-content hindi-letter fade-in">
+                    य (Ya)
+                </div>
+                <div class="letter-content hindi-letter fade-in">
+                    य़ (Yi)
+                </div>
+                <div class="letter-content hindi-letter fade-in">
+                    ज़ (Za) 
+                </div>
+           
+
+
+
+
+            </div>
+        </div>
+        <div class="row english-letters-section">
+            <!-- English Letters -->
+            <div class="col-md-6">
+                <h2 class="mb-3">English Letters</h2>
+                <div class="letter-content english-letter fade-in">
+                    A
+                </div>
+                <!-- Add more English letters here -->
+                <div class="letter-content english-letter fade-in">
+                    B
+                </div>
+                <!-- Continue for all English letters -->
+                <div class="letter-content english-letter fade-in">
+                    C
+                </div>
+                <div class="letter-content english-letter fade-in">
+                    D
+                </div>
+                <div class="letter-content english-letter fade-in">
+                    E
+                </div>
+                <div class="letter-content english-letter fade-in">
+                    F
+                </div>
+                <div class="letter-content english-letter fade-in">
+                    G
+                </div>
+                <div class="letter-content english-letter fade-in">
+                    H
+                </div>
+                <div class="letter-content english-letter fade-in">
+                    I
+                </div>
+                <div class="letter-content english-letter fade-in">
+                    J
+                </div>
+                <div class="letter-content english-letter fade-in">
+                    K
+                </div>
+                <div class="letter-content english-letter fade-in">
+                    L
+                </div>
+                <div class="letter-content english-letter fade-in">
+                    M
+                </div>
+                <div class="letter-content english-letter fade-in">
+                    N
+                </div>
+                <div class="letter-content english-letter fade-in">
+                    O
+                </div>
+                <div class="letter-content english-letter fade-in">
+                    P
+                </div>
+                <div class="letter-content english-letter fade-in">
+                    Q
+                </div>
+                <div class="letter-content english-letter fade-in">
+                    R
+                </div>
+                <div class="letter-content english-letter fade-in">
+                    S
+                </div>
+                <div class="letter-content english-letter fade-in">
+                    T
+                </div>
+                <div class="letter-content english-letter fade-in">
+                    U
+                </div>
+                <div class="letter-content english-letter fade-in">
+                    V
+                </div>
+                <div class="letter-content english-letter fade-in">
+                    W
+                </div>
+                <div class="letter-content english-letter fade-in">
+                    X
+                </div>
+                <div class="letter-content english-letter fade-in">
+                    Y
+                </div>
+                <div class="letter-content english-letter fade-in">
+                    Z
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS script links (be sure to include jQuery and Popper.js before Bootstrap.js) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+        // JavaScript to toggle visibility of sections with animation
+        const hindiBtn = document.getElementById('hindi-btn');
+        const englishBtn = document.getElementById('english-btn');
+        const hindiLettersSection = document.querySelector('.hindi-letters-section');
+        const englishLettersSection = document.querySelector('.english-letters-section');
+
+        hindiBtn.addEventListener('click', () => {
+            hindiLettersSection.style.display = 'block';
+            englishLettersSection.style.display = 'none';
+        });
+
+        englishBtn.addEventListener('click', () => {
+            hindiLettersSection.style.display = 'none';
+            englishLettersSection.style.display = 'block';
+        });
+    </script>
+</body>
+</html>
